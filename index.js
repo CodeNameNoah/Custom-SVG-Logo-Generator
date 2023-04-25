@@ -18,7 +18,7 @@ inquirer
     {
       type: "input",
       name: "logoColor",
-      message: `Please enter a colour keyword or a hexadecimal number as the logo's background colour`,
+      message: `Please enter a color keyword or a hexadecimal number as the logo's background color`,
     },
     {
       type: "list",
@@ -33,9 +33,7 @@ inquirer
 
     //Generate the svg logo here.
     fs.writeFile(svgPath, generateSVG(finalLogo), (err) =>
-      err
-        ? console.error(err)
-        : console.log("Successfully generated logo into logo.svg")
+      err ? console.error(err) : console.log("Generated logo.svg")
     );
   })
   .catch((err) => console.error(err));
