@@ -35,13 +35,11 @@ Thank you for using my logo generating application! I hope you enjoy creating yo
 | :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | `Noah Hoang`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/codenamenoah) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/codenamenoah/) [![Socials](https://skillicons.dev/icons?i=twitter)](https://twitter.com/CodeNameNoahH) |
 
----
-
 ## Take A Look At Our Application In Action! [CLICK THE PREVIEW TO WATCH!]
 
-- [NPH-Custom-SVG-Logo-Generator.webm](https://user-images.githubusercontent.com/127361736/234176318-2cdd7d3e-e746-4cab-bb52-4ebd60e2c1ad.webm)
+- [NPH-Custom-SVG-Logo-Generator Revision.webm](https://user-images.githubusercontent.com/127361736/234183506-ad395c2c-6e95-4205-bed0-eb6efda9e7dc.webm)
 
-- [![Watch the video](https://img.youtube.com/vi/lKwMsQYzu6I/maxresdefault.jpg)](https://youtu.be/lKwMsQYzu6I)
+- [![Watch the video](https://img.youtube.com/vi/5tesgi7AQEw/maxresdefault.jpg)](https://youtu.be/5tesgi7AQEw)
 
 ---
 
