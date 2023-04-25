@@ -37,9 +37,9 @@ Thank you for using my logo generating application! I hope you enjoy creating yo
 
 ## Take A Look At Our Application In Action! [CLICK THE PREVIEW TO WATCH!]
 
-- [Professional SVG Logo Generator User Guide](https://user-images.githubusercontent.com/127361736/233310464-e68f39d8-970d-499a-b679-64e28e1eec35.webm)
+- [NPH-Custom-SVG-Logo-Generator.webm](https://user-images.githubusercontent.com/127361736/234176318-2cdd7d3e-e746-4cab-bb52-4ebd60e2c1ad.webm)
 
-- [![Watch the video](https://img.youtube.com/vi/UY29UGIBR8k/maxresdefault.jpg)](https://youtu.be/UY29UGIBR8k)
+- [![Watch the video](https://img.youtube.com/vi/lKwMsQYzu6I/maxresdefault.jpg)](https://youtu.be/lKwMsQYzu6I)
 
 ---
 
@@ -79,7 +79,7 @@ Education: Students or teachers who are learning about graphic design or brandin
 
 ---
 
-![snippetofnodeuse](https://user-images.githubusercontent.com/127361736/233314153-1022f981-4eff-4bdb-9ed8-2b3873849441.png)
+![SVGTEST](https://user-images.githubusercontent.com/127361736/234174745-4090a858-7664-4245-8ec0-e6e69cae55e4.png)
 
 ---
 
@@ -100,6 +100,10 @@ Education: Students or teachers who are learning about graphic design or brandin
 - Documentation for Node.js
 
   - https://nodejs.org/en
+
+- Guide on SVG: Scalable Vector Graphics
+
+  - https://developer.mozilla.org/en-US/docs/Web/SVG
 
 ## License
 
