@@ -1,167 +1,105 @@
-# 10 Object-oriented Programming: SVG Logo Maker
+# Custom-SVG-Logo-Generator
 
-## Your Task
+I am proud to say that I have designed a program that is capable of generating a custom readme.md file based on the user's level of descriptiveness. To achieve this, I used NPM built-in libraries and dependencies such as inquirer.
 
-Your task is to build a Node.js command-line application that takes in user input to generate a logo and save it as an [SVG file](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics). The application prompts the user to select a color and shape, provide text for the logo, and save the generated SVG to a `.svg` file.
+## Description
 
-Because this application won’t be deployed, you’ll need to provide a link to a walkthrough video that demonstrates its functionality and passes all of the tests. You’ll need to submit a link to the video **and** add it to the README of your project.
+The idea behind this program is to provide a flexible solution for developers who have varying levels of detail they want to include in their readme.md files. By customizing the template and level of detail, developers can create documentation that suits their needs.
 
-Refer to the [Video Submission Guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) on the Full-Stack Blog for additional guidance on creating a video.
+To get started, I first designed the template that the program would use to generate the readme.md file. I made sure to include all the necessary sections such as the project title, description, installation instructions, usage examples, contributing guidelines, and license information. I then made it customizable to suit the user's specific needs.
 
-> **Note**: There is no starter code for this assignment.
-### User Story
+Next, I used the inquirer library to prompt the user for their level of descriptiveness. This would determine how detailed the generated readme.md file would be. For example, if the user selects a high level of detail, the program will generate a more comprehensive readme.md file with detailed instructions and usage examples. If the user selects a low level of detail, the program will generate a simpler readme.md file with only the essential information.
 
-```md
-AS a freelance web developer
-I WANT to generate a simple logo for my projects
-SO THAT I don't have to pay a graphic designer
-```
-
-## Acceptance Criteria
-
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for text
-THEN I can enter up to three characters
-WHEN I am prompted for the text color
-THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I am prompted for a shape
-THEN I am presented with a list of shapes to choose from: circle, triangle, and square
-WHEN I am prompted for the shape's color
-THEN I can enter a color keyword (OR a hexadecimal number)
-WHEN I have entered input for all the prompts
-THEN an SVG file is created named `logo.svg`
-AND the output text "Generated logo.svg" is printed in the command line
-WHEN I open the `logo.svg` file in a browser
-THEN I am shown a 300x200 pixel image that matches the criteria I entered
-```
-
-## Mock-Up
-
-The following image shows a mock-up of the generated SVG given the following input entered by the user: `SVG` for the text, `white` for the text color, `circle` from the list of shapes, and `green` for the shape color. Note that this is just an image of the output SVG and not the SVG file itself:
-
-![Image showing a green circle with white text that reads "SVG.".](./Images/10-oop-homework-demo.png)
-
-## Additional Requirements
-
-This Challenge combines many of the skills covered so far. In addition to the User Story and Acceptance Criteria, we’ve provided some guidelines to help you get started.
-
-Because this Challenge requires a video submission, refer to the [Full-Stack Blog video submission guide](https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide) for guidance on creating and sharing a video.
-
-Your application should use [Jest](https://www.npmjs.com/package/jest) for running the unit tests and [Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4) for collecting input from the user. The application will be invoked by using the following command:
-
-```bash
-node index.js
-```
-
-It is recommended that you start with a directory structure that looks like the following example:
-
-```md
-.  
-├── examples/           // Example svg file(s) created with the app
-├── lib/                // Folder for classes or functions
-    ├── shapes.js       // Exports `Triangle`, `Circle`, and `Square` classes
-    ├── shapes.test.js  // Jest tests for shapes
-    └── more...         // Additional files and tests
-├── .gitignore          // Indicates which folders and files Git should ignore
-├── index.js            // Runs the application using imports from lib/
-├── package.json
-└── README.md           // App description, link to video, setup and usage instructions           
-```
-
-> **Important**: Make sure that you remove `dist` from the `.gitignore` file so that Git will track this folder and include it when you push up to your application's repository.
-The application must include `Triangle`, `Circle`, and `Square` classes, as well as tests for each of these classes using Jest. While not a requirement, it is recommended that you place any common functionality and properties shared by the `Triangle`, `Circle`, and `Square` classes in a parent `Shape` class and use inheritance to reuse the code in the child classes.
-
-Each shape class should be tested for a `render()` method that returns a string for the corresponding SVG file with the given shape color.
-
-The following example test should pass:
-
-```js
-const shape = new Triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-```
-
-You may need to add additional files in the `lib` folder for handling user input, writing to a file, etc. Writing tests for these additional files is **optional**.
-
-## Helpful SVG Resources
-
-* [Example SVG](https://static.fullstack-bootcamp.com/fullstack-ground/module-10/circle.svg)
-
-* [Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
-
-* [SVG tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
-
-* [Basic SVG shapes](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes)
-
-* [Text in SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Texts)
-
-* [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg)
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-This Challenge is graded based on the following criteria:
-
-### Deliverables: 15%
-
-* At least one sample SVG file generated using the application must be submitted.
-
-* Your GitHub repository containing your application code.
-
-### Walkthrough Video: 32%
-
-* A walkthrough video that demonstrates the functionality of the SVG logo maker and passing tests must be submitted.
-
-* The `README.md` file must include a link to the walkthrough video.
-
-* The walkthrough video must show all tests passing from the command line.
-
-* The walkthrough video must demonstrate how a user would invoke the application from the command line.
-
-* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
-
-* The walkthrough video must demonstrate a generated SVG file, showing the file being opened in the browser. The image in the browser must reflect the choices made by the user (text, shape, and colors).
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
-
-  * Uses the [Jest package](https://www.npmjs.com/package/jest) for a suite of unit tests.
-
-  * The application must have `Triangle`, `Square`, and `Circle` classes.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains a high-quality readme with description and a link to a walkthrough video.
-
-## Review
-
-You are required to submit the following for review:
-
-* A walkthrough video that demonstrates the functionality of the application and passing tests.
-
-* At least one sample SVG file generated using your application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
+Finally, I tested the program to ensure that it was working correctly and that it could handle different levels of descriptiveness without any issues. With this program, developers can now generate readme.md files that suit their specific needs without having to spend hours writing documentation from scratch.
 
 ---
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+## Languages and Technologies Used
+
+[![Socials](https://skillicons.dev/icons?i=html,css,js,git)](https://skillicons.dev)
+
+| Feature Technology Used |                      Link                      |
+| :---------------------: | :--------------------------------------------: |
+|        `Node.js`        |         [LINK](https://nodejs.dev/en/)         |
+|     `NPM Inquirer`      | [LINK](https://www.npmjs.com/package/inquirer) |
+|          `NPM`          |         [LINK](https://www.npmjs.com/)         |
+
+---
+
+| Collaborators |                                                                                                                                  Socials                                                                                                                                   |
+| :-----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `Noah Hoang`  | [![Socials](https://skillicons.dev/icons?i=git)](https://github.com/codenamenoah) [![Socials](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/codenamenoah/) [![Socials](https://skillicons.dev/icons?i=twitter)](https://twitter.com/CodeNameNoahH) |
+
+---
+
+## Take A Look At Our Application In Action! [CLICK THE PREVIEW TO WATCH!]
+
+- [Professional README.md Generator User Guide](https://user-images.githubusercontent.com/127361736/233310464-e68f39d8-970d-499a-b679-64e28e1eec35.webm)
+
+- [![Watch the video](https://img.youtube.com/vi/UY29UGIBR8k/maxresdefault.jpg)](https://youtu.be/UY29UGIBR8k)
+
+---
+
+## Installation
+
+**To Clone Our Repository Using CLI**
+
+1. Click on the green code button and copy the link for the SSH key.
+2. Once clip-boarded load up a command line interface and change directory to one of your preference
+3. Enter in the command `git clone git@github.com:CodeNameNoah/Professional-README-Generator.git`
+4. Enter your protected SSH password
+5. Enjoy!
+
+**To Download Our Repository as a ZIP File**
+
+1. Click on the green code button
+2. In the bottom of the drop-down menu, click Download Zip
+3. Enjoy!
+
+![github](https://user-images.githubusercontent.com/127361736/227422005-d28a9020-e331-4098-976b-df9c1e545bb4.png)
+
+---
+
+## Usage
+
+This application is designed to be utilized by developers who need to create readme.md files for their projects. The program allows developers to generate custom readme.md files that are tailored to their specific needs, based on their level of descriptiveness.
+
+To use this program, the developer first needs to install the required dependencies using the Node Package Manager (NPM). Once the dependencies are installed, the developer can run the program from the command line by executing the main file.
+
+The program will then prompt the developer for information about the project, such as the project name, description, and installation instructions. The developer can choose their desired level of descriptiveness for each section, and the program will generate a custom readme.md file based on the input provided.
+
+The generated readme.md file can then be saved and used as the project's documentation. The program's customizability makes it an excellent tool for developers who need to create documentation that is both comprehensive and concise, saving them time and effort in the documentation process.
+
+Here is a screen to help illustrate the prompt phase where the user will respond to a series of prompt asked by the constructor function to generate their custom README.md
+
+---
+
+![snippetofnodeuse](https://user-images.githubusercontent.com/127361736/233314153-1022f981-4eff-4bdb-9ed8-2b3873849441.png)
+
+---
+
+## Credits & Source Codes
+
+- Guide for Gifs to use in README.md
+
+  - https://www.youtube.com/watch?v=3RlpVrYt_qE&ab_channel=AskCloudArchitech
+
+- Documentation for NPM
+
+  - https://www.npmjs.com
+
+- Documentation for NPM 'Inquirer'
+
+  - https://www.npmjs.com/package/inquirer
+
+- Documentation for Node.js
+
+  - https://nodejs.org/en
+
+## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the MIT license.
+
+---

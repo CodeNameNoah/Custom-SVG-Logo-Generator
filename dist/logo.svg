@@ -1,12 +1,13 @@
+<!-- Example of SVG Logo Generator Output -->
   <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-    <rect width="100" height="100" rx="15" fill="BROWN" />
+    <circle cx="50" cy="50" r="50" fill="#FDB813" />
     <text
       x="50%"
       y="50%"
       text-anchor="middle"
-      fill="GREEN"
+      fill="Yellow"
       font-size="2.3rem" letter-spacing="2" dy=".3em"
-      font-family="monospace">SAD
+      font-family="monospace">SUN
     </text>
   </svg>
   

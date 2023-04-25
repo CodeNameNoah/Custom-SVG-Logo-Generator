@@ -8,17 +8,17 @@ inquirer
     {
       type: "input",
       name: "logoName",
-      message: "Please enter letters for logo no longer than 3 letters",
+      message: "Please enter 1-3 letters for your logo",
     },
     {
       type: "input",
       name: "textColor",
-      message: `Please enter color name or the hexadecimal number for the desired color`,
+      message: `Please enter text color keyword or a hexadecimal number as the logo's text color`,
     },
     {
       type: "input",
       name: "logoColor",
-      message: `Please enter a color keyword or the hexadecimal number for the desired background color`,
+      message: `Please enter a colour keyword or a hexadecimal number as the logo's background colour`,
     },
     {
       type: "list",
@@ -31,7 +31,7 @@ inquirer
     const svgPath = "./dist/logo.svg";
     const finalLogo = generateShape(data);
 
-    // Generates code to display logo in Generated logo.svg
+    //Generate the svg logo here.
     fs.writeFile(svgPath, generateSVG(finalLogo), (err) =>
       err
         ? console.error(err)
