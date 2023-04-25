@@ -5,8 +5,8 @@ describe("Circle", () => {
     it("should render a circle string", () => {
       const circle = new Circle({
         logoName: "War",
-        textColour: "red",
-        bgColour: "brown",
+        textColor: "red",
+        bgColor: "brown",
         logoShape: "circle",
       });
       expect(circle.render()).toBe(
