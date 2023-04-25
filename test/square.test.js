@@ -5,8 +5,8 @@ describe("Square", () => {
     it("expected to render square string", () => {
       const square = new Square({
         logoName: "Sun",
-        textColour: "red",
-        bgColour: "yellow",
+        textColor: "red",
+        bgColor: "yellow",
         logoShape: "square",
       });
       expect(square.render()).toBe(

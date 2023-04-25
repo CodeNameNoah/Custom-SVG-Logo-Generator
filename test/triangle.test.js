@@ -5,8 +5,8 @@ describe("Triangle", () => {
     it("should return triangle string", () => {
       const triangle = new Triangle({
         logoName: "Sun",
-        textColour: "red",
-        bgColour: "#000",
+        textColor: "red",
+        bgColor: "#000",
         logoShape: "triangle",
       });
       expect(triangle.render()).toBe(
