@@ -1,0 +1,31 @@
+{
+  "name": "custom-svg-logo-generator",
+  "version": "1.0.0",
+  "description": "NPM Dependecy Initial Set Up",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeNameNoah/Custom-SVG-Logo-Generator.git"
+  },
+  "keywords": [
+    "NPM",
+    "Inquirer",
+    "fs"
+  ],
+  "author": "Noah Hoang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeNameNoah/Custom-SVG-Logo-Generator/issues"
+  },
+  "homepage": "https://github.com/CodeNameNoah/Custom-SVG-Logo-Generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^9.2.0"
+  }
+}
