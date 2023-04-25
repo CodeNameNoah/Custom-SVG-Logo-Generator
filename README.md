@@ -1,16 +1,18 @@
 # Custom-SVG-Logo-Generator
 
-I am proud to say that I have designed a program that is capable of generating a custom readme.md file based on the user's level of descriptiveness. To achieve this, I used NPM built-in libraries and dependencies such as inquirer.
+Hello! Welcome to my logo generating application. With this tool, you can easily create a custom SVG logo by simply inputting 1-3 letters and answering some questions.
 
 ## Description
 
-The idea behind this program is to provide a flexible solution for developers who have varying levels of detail they want to include in their readme.md files. By customizing the template and level of detail, developers can create documentation that suits their needs.
+First, enter the letters you want to include in your logo. This can be anything from your initials to a specific acronym or word. Once you have entered your letters, the application will generate a variety of logo designs based on your input.
 
-To get started, I first designed the template that the program would use to generate the readme.md file. I made sure to include all the necessary sections such as the project title, description, installation instructions, usage examples, contributing guidelines, and license information. I then made it customizable to suit the user's specific needs.
+Next, you will be prompted to select the color scheme for your logo. The application uses the npm inquirer package to ask you a series of questions about your color preferences. You can input the name of a color keyword, such as "blue" or "red," or you can enter a hexadecimal color key for more specific color choices. You can also choose the color of the text and the background separately.
 
-Next, I used the inquirer library to prompt the user for their level of descriptiveness. This would determine how detailed the generated readme.md file would be. For example, if the user selects a high level of detail, the program will generate a more comprehensive readme.md file with detailed instructions and usage examples. If the user selects a low level of detail, the program will generate a simpler readme.md file with only the essential information.
+Once you have chosen your color scheme, the application will generate a variety of logo designs for you to choose from. You can select the one that you like the most, or you can continue to generate more designs until you find one that suits your needs.
 
-Finally, I tested the program to ensure that it was working correctly and that it could handle different levels of descriptiveness without any issues. With this program, developers can now generate readme.md files that suit their specific needs without having to spend hours writing documentation from scratch.
+Finally, when you are satisfied with your logo design, you can export it as an SVG file. This file can be used for a variety of purposes, such as creating business cards, website designs, or even merchandise.
+
+Thank you for using my logo generating application! I hope you enjoy creating your own custom logos with it.
 
 ---
 
@@ -23,6 +25,7 @@ Finally, I tested the program to ensure that it was working correctly and that i
 |        `Node.js`        |         [LINK](https://nodejs.dev/en/)         |
 |     `NPM Inquirer`      | [LINK](https://www.npmjs.com/package/inquirer) |
 |          `NPM`          |         [LINK](https://www.npmjs.com/)         |
+|         `Jest`          |   [LINK](https://www.npmjs.com/package/jest)   |
 
 ---
 
@@ -34,7 +37,7 @@ Finally, I tested the program to ensure that it was working correctly and that i
 
 ## Take A Look At Our Application In Action! [CLICK THE PREVIEW TO WATCH!]
 
-- [Professional README.md Generator User Guide](https://user-images.githubusercontent.com/127361736/233310464-e68f39d8-970d-499a-b679-64e28e1eec35.webm)
+- [Professional SVG Logo Generator User Guide](https://user-images.githubusercontent.com/127361736/233310464-e68f39d8-970d-499a-b679-64e28e1eec35.webm)
 
 - [![Watch the video](https://img.youtube.com/vi/UY29UGIBR8k/maxresdefault.jpg)](https://youtu.be/UY29UGIBR8k)
 
@@ -46,7 +49,7 @@ Finally, I tested the program to ensure that it was working correctly and that i
 
 1. Click on the green code button and copy the link for the SSH key.
 2. Once clip-boarded load up a command line interface and change directory to one of your preference
-3. Enter in the command `git clone git@github.com:CodeNameNoah/Professional-README-Generator.git`
+3. Enter in the command `git clone git@github.com:CodeNameNoah/Custom-SVG-Logo-Generator.git`
 4. Enter your protected SSH password
 5. Enjoy!
 
@@ -62,15 +65,17 @@ Finally, I tested the program to ensure that it was working correctly and that i
 
 ## Usage
 
-This application is designed to be utilized by developers who need to create readme.md files for their projects. The program allows developers to generate custom readme.md files that are tailored to their specific needs, based on their level of descriptiveness.
+There are many reasons why you would want to use a custom SVG logo generator like the one you have designed. Here are a few possible use cases:
 
-To use this program, the developer first needs to install the required dependencies using the Node Package Manager (NPM). Once the dependencies are installed, the developer can run the program from the command line by executing the main file.
+Business branding: Business owners who are looking to create a unique and memorable logo for their brand can use your application to generate a custom logo that represents their company.
 
-The program will then prompt the developer for information about the project, such as the project name, description, and installation instructions. The developer can choose their desired level of descriptiveness for each section, and the program will generate a custom readme.md file based on the input provided.
+Personal branding: Individuals who are looking to create a personal brand, such as bloggers, social media influencers, or freelancers, can use your application to generate a logo that represents their personal style and identity.
 
-The generated readme.md file can then be saved and used as the project's documentation. The program's customizability makes it an excellent tool for developers who need to create documentation that is both comprehensive and concise, saving them time and effort in the documentation process.
+Design projects: Graphic designers or other creative professionals who are working on design projects can use your application to quickly generate a variety of logo options for their clients.
 
-Here is a screen to help illustrate the prompt phase where the user will respond to a series of prompt asked by the constructor function to generate their custom README.md
+DIY projects: Hobbyists or DIY enthusiasts who are looking to create custom t-shirts, posters, or other merchandise can use your application to generate a logo that they can use for their projects.
+
+Education: Students or teachers who are learning about graphic design or branding can use your application to experiment with different logo design concepts and learn about color theory and other design principles.
 
 ---
 
