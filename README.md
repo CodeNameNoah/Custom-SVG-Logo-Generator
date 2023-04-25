@@ -1,6 +1,8 @@
 # Custom-SVG-Logo-Generator
 
-Hello! Welcome to my logo generating application. With this tool, you can easily create a custom SVG logo by simply inputting 1-3 letters and answering some questions.
+Hello, I am excited to introduce you to my custom SVG logo generator! With this tool, you can create a unique logo that represents your brand or personal style in just a few easy steps.
+
+My logo generator works by asking you a series of questions about your preferences. You will start by entering 1-3 letters that you want to include in your logo. Based on your input, the generator will produce a range of logo designs for you to choose from.
 
 ## Description
 
